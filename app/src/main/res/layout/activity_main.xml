@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"
+       android:padding="12dp"
+       android:id="@+id/fab"
+       android:soundEffectsEnabled="true"
+       android:src="@drawable/ic_add_a_photo_black_24dp"
+       app:elevation="17dp"
+       app:fabSize="normal"
+       android:layout_margin="24dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/egg"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/the_egg"
+        android:scaleType="center"/>
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+        android:id="@+id/fading_edge_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fel_edge="top|left|bottom|right"
+        app:fel_size_top="50dp"
+        app:fel_size_bottom="50dp"
+        app:fel_size_left="50dp"
+        app:fel_size_right="50dp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/faceimg"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/face" />
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
